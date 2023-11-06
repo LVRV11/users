@@ -20,7 +20,18 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
           padding: const EdgeInsets.all(16.0),
           children: [
             TextFormField(
-              decoration: const InputDecoration(labelText: 'Full name *'),
+              decoration: const InputDecoration(
+                labelText: 'Full name *',
+                hintText: 'What do people call you',
+                prefixIcon: Icon(Icons.person),
+                suffixIcon: Icon(
+                  Icons.delete_outlined,
+                  color: Colors.amber,
+                ),
+                enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    borderSide: BorderSide(color: Colors.orange)),
+              ),
             ),
             const SizedBox(height: 10),
             TextFormField(
