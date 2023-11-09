@@ -30,7 +30,7 @@ class _RegisterFormPageState extends State<RegisterFormPage> {
     'Netherlands',
     'Ukraine',
     'Germany',
-    'France'
+    'Franc'
   ];
   String _selectedCountry = 'Netherlands';
 
